@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.web.multipart.MultipartFile;
 
 @Table(name = "event")
 @Entity
@@ -29,4 +30,19 @@ public class Event {
   private String eventUrl;
   private Boolean remote;
   private Date date;
+
+  public void setDescription(String description) {
+  }
+
+  public void setTitle(MultipartFile image) {
+  }
+
+  public void setEventUrl(String s) {
+  }
+
+  public void setDate(Date date) {
+  }
+
+  public void setImgUrl(String imageUrl) {
+  }
 }
